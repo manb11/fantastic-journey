@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    int year, yun;
+    
+    scanf("%d", &year);
+    
+    yun = ((year % 4) == 0)||((year % 100) == 0)&&((year % 400) == 0) ? printf("윤년입니다.\n") : printf("윤년이 아닙니다.");
+    
+
+    return 0;
+}
